@@ -27,16 +27,16 @@ $res = $connexion->query($readsql);
 <body>
     <div class="container">
         <div class="row pt-4">
-            <h2>Liste des clients enregistrer</h2>
+            <h1>Liste des clients enregistrer</h1>
 
             <a href="index.php">
                 <button type="" class="btn btn-primary">Ajouter un Clients</button>
             </a>
         </div>
 
-        <table class="table">
+        <table class="table table-client">
             <thead>
-                <tr>
+                <tr class="entete">
                     <th scope="col">id</th>
                     <th scope="col">nom</th>
                     <th scope="col">prenom</th>
@@ -44,6 +44,7 @@ $res = $connexion->query($readsql);
                     <th scope="col">age</th>
                     <th scope="col">email</th>
                     <th scope="col">password</th>
+                    <th scope="col" class="action">action</th>
                 </tr>
             </thead>
             <tbody>
@@ -60,7 +61,7 @@ $res = $connexion->query($readsql);
                     <td><?php echo $repon['email']; ?></td>
                     <td><?php echo $repon['password']; ?></td>
 
-                    <td>
+                    <td class="updel">
                         <a href="update.php?id=<?php echo $repon['id']; ?>" class="m-2">
                             <button class="btn btn-primary m-2">Modifier</button>
                         </a>

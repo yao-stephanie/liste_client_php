@@ -7,20 +7,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.js">
 </head>
 
 <body>
     <nav>
         <div class="brand_site">
-            <p> sen dev tech</p>
+            <img src="image/torrent.png" alt="" class="logo">
         </div>
-        <div class="center_link">
-            <a href="">home</a>
-            <a href="index.php"> ajouter un etudiant</a>
-        </div>
-        <div class="right_link">
-            <a href=""> Pofil admin</a>
-        </div>
+        <ul class="menu">
+            <li><a class="liens" href="index.php">home</a></li>
+            <li><a class="liens" href="view.php">Voir la Liste</a>
+            <li>
+                <!-- <il><a href="#"></a></il>
+                <il><a href="#"></a></il> -->
+        </ul>
+        <a href="login.php"><button class="btn btn-success">Deconnexion</button></a>
     </nav>
 </body>
 

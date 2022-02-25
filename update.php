@@ -46,22 +46,22 @@ include('connect.php');
         <h1>Formulaire de contact</h1>
         <form action="" method="POST">
             <label for="fname">nom</label>
-            <input type="text" name="nom" placeholder="Votre nom " values="<?php echo $repon['nom']; ?>">
+            <input type="text" name="nom" placeholder="Votre nom " value="<?php echo $repon['nom']; ?>">
             <label for="fname"> prenom</label>
-            <input type="text" name="prenom" placeholder="Votre  prénom" values="<?php echo $repon['prenom']?>">
+            <input type="text" name="prenom" placeholder="Votre  prénom" value="<?php echo $repon['prenom']?>">
 
             <label for="sujet">ville</label>
-            <input type="text" id="ville" name="ville" placeholder="ville" values="<?php echo $repon['ville']?>">
+            <input type="text" id="ville" name="ville" placeholder="ville" value="<?php echo $repon['ville']?>">
 
             <label for="emailAddress">age</label>
-            <input type="text" name="age" placeholder="Votre age" values="<?php echo $repon['age']?>">
+            <input type="text" name="age" placeholder="Votre age" value="<?php echo $repon['age']?>">
 
 
             <label for="subject">email</label>
-            <input type="email" name="email" placeholder="Votre email" values="<?php echo $repon['email']?>">
+            <input type="email" name="email" placeholder="Votre email" value="<?php echo $repon['email']?>">
 
             <label for="subject">password</label>
-            <input type="text" name="password" placeholder="Votre password" values="<?php echo $repon['password']?>">
+            <input type="text" name="password" placeholder="Votre password" value="<?php echo $repon['password']?>">
 
             <div class="pt-4">
                 <input type="submit" value="Envoyer" class="btn btn-primary m-3">

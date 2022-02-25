@@ -15,11 +15,14 @@ include('connect.php');
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.js">
 </head>
 
 <body>
     <div class="container">
-        <h1>Formulaire de contact</h1>
+        <h1>Formulaire nouveau client</h1>
         <form action="" method="POST">
             <label for="fname">nom</label>
             <input type="text" id="fname" name="nom" placeholder="Votre nom ">
@@ -39,9 +42,9 @@ include('connect.php');
             <label for="subject">password</label>
             <input id="password" type="text" name="password" placeholder="Votre password">
 
-            <div class="pt-4">
+            <div class="bloc-btn">
                 <input type="submit" value="Envoyer" class="btn btn-primary m-3">
-                <a href="view.php">
+                <a class="liens" href="view.php">
                     <button class="btn btn-success m-3" type="button">
                         voir la listes
                     </button>
