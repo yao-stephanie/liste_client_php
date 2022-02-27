@@ -13,11 +13,11 @@ if(isset($_POST) & !empty($_POST)){
 
          $reponse =$connexion->query($createSql);
     
-         while($donnees=$reponse->fetch()){
-             echo $donnees[$nom];
-         };
-         $reponse->closeCursor();
-         echo "sa marche";
+        //  while($donnees=$reponse->fetch()){
+        //      echo $donnees[$nom];
+        //  };
+        //  $reponse->closeCursor();
+        //  echo "sa marche";
 
 
     // $createSql = "INSERT INTO `ùser_client` (nom, prenom, ville, age, email, password)

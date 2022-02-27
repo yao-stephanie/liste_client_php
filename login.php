@@ -1,6 +1,6 @@
 <?php
-include('connect_user.php');
 include('connect.php');
+include('connect_user.php')
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -30,18 +30,20 @@ include('connect.php');
                 <p>login in !</p>
             </div>
 
-            <form id="form">
+            <form method="POST" action="#">
                 <div class="register">
-                    <label for="username">Username</label>
-                    <input type="text" id="username" placeholder="enter Username">
+                    <label for="subject">login</label>
+                    <input type="text" id="username" name="login" placeholder=" enter Username">
                 </div>
                 <div class="register">
-                    <label for="password">Password</label>
+                    <label for="subject">Password</label>
                     <input type="text" id="password" name="password" placeholder="enter Password">
                 </div>
-                <div class="bloc-btn">
-                    <input type="submit" value="Envoyer" class="btn btn-primary m-3">
-                </div>
+                <a class="liens" href="index.php">
+                    <button class="btn btn-success m-3" type="button">
+                        connexion
+                    </button>
+                </a>
             </form>
         </div>
     </header>
