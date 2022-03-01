@@ -4,9 +4,9 @@ if(isset($_POST) & !empty($_POST)){
     $login=($_POST['login']);
     $password=($_POST['password']);
 
-    $createSql = "INSERT INTO `utilisatur` (login, password) VALUES('$login','$password')";
+    $logqls = "INSERT INTO `user` (login, password) VALUES('$login','$password')";
 
-         $donnes=$connexion->query($createSql);
+         $donnes=$connexion->query($logqls);
     
         //  while($don=$control->fetch()){
         //      echo $don[$username];

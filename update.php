@@ -3,7 +3,7 @@ include_once 'navbar.php';
 include('connect.php');
  
  $id=$_GET['id'];
-  $selsql= "SELECT * FROM `user_client` WHERE id=$id";
+  $selsql= "SELECT * FROM `listeclient` WHERE id=$id";
   $res = $connexion->query($selsql);
   $repon = $res->fetch();
 
@@ -17,7 +17,7 @@ include('connect.php');
     $email=($_POST['email']); 
     $password=($_POST['password']);
 
-    $updateSql = "UPDATE `user_client` SET nom='$nom' ,prenom='$prenom' ,ville='$ville' ,age='$age' ,email='$email, password='$password') WHERE id=$id ";
+    $updateSql = "UPDATE `listeclient` SET nom='$nom' ,prenom='$prenom' ,ville='$ville' ,age='$age' ,email='$email, password='$password') WHERE id=$id ";
 
     $res=$connexion->query($updateSql);
     // $repon=$res->fetch();

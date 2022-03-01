@@ -30,7 +30,7 @@ include('connect_user.php')
                 <p>login in !</p>
             </div>
 
-            <form method="POST" action="#">
+            <form method="POST" action="#" id="formulaire">
                 <div class="register">
                     <label for="subject">login</label>
                     <input type="text" id="username" name="login" placeholder=" enter Username">
@@ -39,14 +39,15 @@ include('connect_user.php')
                     <label for="subject">Password</label>
                     <input type="text" id="password" name="password" placeholder="enter Password">
                 </div>
-                <a class="liens" href="index.php">
-                    <button class="btn btn-success m-3" type="button">
-                        connexion
-                    </button>
-                </a>
+                <!-- <a class="liens" href="index.php">
+                </a> -->
+                <input type="submit" value=" Envoyer" class="btn btn-primary m-3">
             </form>
         </div>
     </header>
+
+
+    <script src="app.js"></script>
 </body>
 
 </html>

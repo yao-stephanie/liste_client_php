@@ -2,7 +2,7 @@
 include('navbar.php');
 
 include('connect.php');
-$readsql = "SELECT * FROM `user_client`";
+$readsql = "SELECT * FROM `listeclient`";
 $res = $connexion->query($readsql);
 
 

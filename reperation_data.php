@@ -9,7 +9,7 @@ if(isset($_POST) & !empty($_POST)){
     $email=($_POST['email']);
     $password=($_POST['password']);
 
-    $createSql = "INSERT INTO `user_client` (nom ,prenom ,ville ,age ,email, password) VALUES('$nom' , '$prenom' , '$ville' , '$age' , '$email' , '$password')";
+    $createSql = "INSERT INTO `listeclient` (nom ,prenom ,ville ,age ,email, password) VALUES('$nom' , '$prenom' , '$ville' , '$age' , '$email' , '$password')";
 
          $reponse =$connexion->query($createSql);
     
